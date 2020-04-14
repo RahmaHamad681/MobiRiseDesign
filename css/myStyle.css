@@ -1,0 +1,544 @@
+/* Default Settings */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body, .card {
+    background-color: #f9f9f9;
+}
+a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+}
+.row {
+    margin: 0;
+}
+.col-6 {
+    padding: 0;
+} 
+.card {
+    border: none;
+}
+.card-body {
+    padding: 1.25rem 0;
+}
+.card-body p {
+    margin-top: 0.5rem;
+    color: lightslategrey;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+h3 {
+    font-weight: 400;
+}
+h2 {
+    font-size: 3.1rem;
+    font-weight: 350;
+}
+/* End Default Settings */
+/* Header */
+header {
+    height: 59vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../images/header-background.jpg');    
+}
+/* Navbar */
+.navbar {
+    padding: 0.5rem 5rem;
+}
+.mobirise-logo {
+    width: 60px;
+    height: 60px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+   padding: 0 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+/* Underline Transition */
+#navbarSupportedContent>ul>li:after {
+    content: '';
+    display:block;
+    transform: scaleX(0);  
+    transition: transform 210ms ;
+    border-bottom: 3px solid #1c79db;  
+}
+#navbarSupportedContent>ul>li.nav-item:after { 
+    transform-origin: 100% 50%; 
+}
+#navbarSupportedContent>ul>li.nav-item:hover:after { 
+    transform: scaleX(1); 
+    transform-origin: 0% 50%; 
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-brand span:hover {
+    color: #4284df;
+}
+.dropdown-menu {
+    background-color: #212529;
+}
+.dropdown-item {
+    color: #fff;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.badge {
+    font-size: 13px;
+    margin: -3px 0 0 20px;
+    padding: 0.6rem 1.7rem;
+}
+/* End Navbar */
+.header-overlay, .overlay2 {
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+}
+.header-overlay {
+    opacity: 0.8;
+    background: linear-gradient(#eb4e6f -10%, #4284df 75%); 
+}
+#header-title {
+    top: 37%;
+    z-index: 10;
+    position: relative;
+}
+/* End Header */
+/* Insurance Policy Section */
+.insurance-img, .img01-02-03, .img-15-59 {
+    width: 100%;
+}
+.overlay2 {
+    opacity: 0.9;
+    background: linear-gradient(90deg, #0c57bf, #6441a5);
+}
+.insurance {
+    color: white;
+    padding: 5rem 3rem;
+    background-size: cover;
+    background-image: url('../images/lorem-ipsum.jpg');
+}
+.insurance-content {
+    z-index: 30;
+    position: relative;
+}
+/* End Insurance Policy Section */
+/* Flexible Rates Section */
+#flexible-rates {
+    height: 566px;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../images/flexiblebackground6.jpg');
+}
+.overlay3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    background: linear-gradient(90deg, #d6173f, #4284df);
+}
+.flexible-rate {
+    width: 547px;
+    height: 100%;
+    margin-left: 8rem;
+    position: relative;
+    padding: 5rem 0 0 6rem;
+    background-color: #fff;
+}
+.flexible-rate p {
+    color: #7c7b7b;
+}
+.btn-md {
+    font-weight: 500;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    padding: 0.8rem 3rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+    background-color: #4284df;
+    border-color: #4284df;
+}
+/* End Flexible Rates Section */
+/* Lorem Ipsum Section */
+#lorem-ipsum {
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../images/lorem-img.jpg');
+}
+#lorem-ipsum .container {
+    padding: 5rem 8px;
+}
+#lorem-ipsum .lorem-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    background: linear-gradient(90deg, #0c57bf, #21b968);
+}
+#lorem-ipsum .row:hover img {
+    transform: translate3d(0, -6px, 0);
+}
+.lorem-img {
+    width: 80%;
+    transition: transform 0.4s cubic-bezier(0.38, 3, 0.57, 1.6);
+}
+/* End Lorem Ipsum Section */
+/* 01 02 03 Section */
+#section-01-02-03 {
+    height: 95vh;
+    position: relative;
+}
+#section-01-02-03 .container {
+    padding: 5rem 3rem 0 6rem;
+}
+#section-01-02-03 .overlay-01 {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+    background-color: #4284df;
+    background: linear-gradient(90deg, #4284df, #04367c);
+}
+.img01-02-03 {
+    margin: 3rem 0 0 6rem;
+}
+/* End 01 02 03 Section */
+/* What Pepole Say about MobiRise Section */
+#pepole-sayings {
+    height: 110vh;
+    padding: 7rem 6rem 0;
+
+}
+.card-img-top {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 0 1.5rem 6rem;
+}
+#pepole-sayings p {
+    color: #615e5e;
+}
+#pepole-sayings h5 {
+    color: #5f5d5d;
+}
+.line {
+    width: 150px;
+    height: 3px;
+    margin: 2rem 0 0.5rem 6.3rem;
+    background-color: #4284df;
+}
+/* End What Pepole Say about MobiRise Section */
+/* Our Team Section */
+#our-team {
+    padding: 0 7rem 7rem;
+}
+#our-team img {
+    width: 200px;
+    height: 200px;
+    margin-left: 1.7rem;
+    border-radius: 50%;
+}
+#our-team h3 {
+    color: #3e3b3b;
+} 
+#our-team h6 {
+    color: #5d80ea;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+#our-team p {
+    color: #4e4d4d;
+}
+#our-team .social-media a i {
+    color: #232323;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+}
+#our-team .social-media a:hover i {
+    color: #4284df;
+}
+/* End Our Team Section */
+/* Our Personal Section */
+#our-personel {
+    padding: 3rem 0 5rem;
+    background-color: #fff;
+}
+#our-personel strong {
+    font-weight: 700;
+}
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+   
+    font-size: 18px;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    /* Center slide text vertically */
+    display: inline-block;
+}
+.swiper-slide img {
+    border-radius: 50%;
+    margin: 2rem 0 2rem;
+}
+.swiper-button-next,.swiper-button-prev {
+    top: 63%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-size: 35px 35px;
+    background-color: lightgray;
+}
+.swiper-button-next {
+    right: 167px;
+}
+.swiper-button-prev {
+    left: 167px;
+}
+/* End Our Personal Section */
+/* Organizitional Behavioral Section */
+#organizational-behavior {
+    padding: 5rem 7rem;
+}
+#organizational-behavior h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+#organizational-behavior .display-4 {
+    line-height: 1;
+    font-size: 3.3rem;
+}
+#organizational-behavior .col-6 h4 strong {
+    color: gray;
+}
+.organization-paragraph {
+    width: 85%;
+    line-height: 1;
+    font-weight: 350;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+/* End Organizitional Behavioral Section */
+/*  Our News Section */
+#our-news, #our-news .card {
+    background-color: #f9f9f9;
+}
+#our-news {
+    padding: 3rem 7rem 5rem;
+}
+
+#our-news img {
+    height: 218px;
+    margin: 2rem 0 1rem;
+}
+#our-news .card-body span {
+    color: #fff;
+    max-width: 90%;
+    padding: 0.2rem 1rem;
+    background-color: #d6173f;
+}
+/*  End Our News Section */
+/* Private Banking Section */
+#private-banking {
+    padding: 5rem 9rem 9rem;
+}
+#private-banking > p {
+    color: #676363;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.mbri {
+    font-size: 3rem;
+    color: #4284df;
+}
+#private-banking .col-4 > h4 {
+    margin: 2rem 0 0.5rem;
+}
+/* End Private Banking Section */
+/* Insurance & Analysis & Rates & Sites Section */
+#insurance-analysis-rates-sites {
+    padding: 5rem 9rem;
+}
+#insurance-analysis-rates-sites .card-body span {
+    color: #fff;
+    font-size: 40px;
+    padding: 1.5rem;
+    border-radius: 50%;
+    transition: all .4s;
+    background: #4284df;
+    border: 2px solid #4284df;
+}
+#insurance-analysis-rates-sites .card-body:hover span {
+    color: #4284df;
+    background: #fff;
+}
+#insurance-analysis-rates-sites .card-body h4 {
+    margin-top: 3rem;
+}
+/* End Insurance & Analysis & Rates & Sites Section */
+/* Smart Solutions & consulting & Accounting Seciton */
+#smart-consulting-accounting {
+    padding: 7rem 9rem;
+}
+#smart-consulting-accounting .card-body {
+    margin: -4.5rem 0 0 5rem;
+}
+/* End Smart Solutions & consulting & Accounting Seciton */
+/* Consulting Edge Section */
+#cosulting-edge {
+    padding: 5rem 9rem;
+}
+#cosulting-edge .card-body {
+    margin: -4.5rem 0 1.5rem 5rem;
+}
+.card-days {
+    color: #fff;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 1rem 0 1rem 2rem;
+    background-color: #4284df;
+}
+.card-days .schedule li {
+    margin-bottom: -3rem ;
+}
+.card-days .schedule span {
+    top: 1.7rem;
+    left: 10rem;
+    position: relative;
+}
+.card-days .schedule hr {
+    width: 90%;
+    top: 0.5rem;
+    left: -1rem;
+    height: 1px;
+    position: relative;
+    background-color: #fff;
+}
+/* End Consulting Edge Section */
+/* Credit Card Section */
+#credit-card {
+    height: 100vh;
+}
+.credit-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fd446b;
+    background: linear-gradient(90deg, #fd446b, #5238ff);
+}
+#credit-card .container {
+    color: #fff;
+    position: relative;
+    padding-top: 5rem;
+}
+#credit-card .container > p {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+#credit-card .mbri {
+    color: #fff;
+}
+#credit-card .card-box {
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* End Credit Card Section */
+/* Sales & Operations & Online Solution Section */
+.sales-operations {
+    padding: 5rem 1rem;
+}
+.sales-operations .card img {
+    height: 227px;
+}
+.sales-operations .card-days {
+    margin: 0;
+}
+.sales-operations .card-days .schedule span {
+    left: 7rem;
+}
+.sales-operations .card-days .schedule hr {
+    width: 97%;
+    left: -0.1rem;
+}
+/* End Sales & Operations & Online Solution Section */
+/* Tabs & Media */
+.nav {
+    border: none;
+    margin: 0.3rem 0 3rem 9rem;
+}
+#tabs-media .nav-item .nav-link.active {
+    border: none;
+    color: #4284df;
+    background: transparent;
+    padding: 0.5rem 1rem 0.5rem;
+    border-bottom: 3px solid #4284df;
+}
+.nav-tabs .nav-item .nav-link {
+    margin: 0;
+    border: none;
+    color: #767676;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 0.7rem;
+    border-bottom: 1px solid #4284df;
+    transition: background-color 0.25s ease-in-out;
+}
+/* End Tabs & Media */
+/* More Agencym4 */
+#more-agency {
+    padding-top: 5rem;
+}
+#more-agency strong {
+    font-weight: 700;
+}
+.footers {
+    width: 100%;
+}
+.more-agency {
+    padding: 5rem 9rem;
+}
+.more-agency h4 {
+    margin-top: 1rem;
+}
+/* End More Agencym4 */
+/* Footer */
+footer {
+    line-height: 2.5rem;
+    padding: 3rem 7rem 2rem;
+    background-color: #efefef;
+}
+footer img {
+    width: 48px;
+    height: 48px;
+    margin: -2px 7px 0 0;
+}
+footer span {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+footer a {
+    color: #232323;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+
